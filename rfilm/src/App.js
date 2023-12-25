@@ -13,10 +13,8 @@ function App() {
   const dispatch = useDispatch();
   const movies = useSelector((state)=>state.movies);
   useEffect (()=>{
-    dispatch (get_movies(moviesData),[])
-  })
-
- 
+    dispatch(get_movies(moviesData));
+  }, []);
 
 
   return (
